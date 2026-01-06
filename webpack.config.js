@@ -20,6 +20,7 @@ module.exports = (env, argv) => {
         // Strip webpack:// prefix and plugin name for cleaner source map paths
         return info.resourcePath;
       },
+      sourceMapFilename: '[file].map',
     },
     externals: [
       'lodash',
