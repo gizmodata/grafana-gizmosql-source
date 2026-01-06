@@ -5,6 +5,16 @@ All notable changes to the GizmoSQL Grafana Data Source Plugin will be documente
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0] - 2026-01-06
+
+### Changed
+- Scaffold project with @grafana/create-plugin for official build system
+- Use official Grafana webpack configuration from .config directory
+- Update dependencies to latest Grafana SDK versions
+
+### Fixed
+- Fix js-map-no-match error by using official Grafana build tooling
+
 ## [1.5.6] - 2026-01-06
 
 ### Fixed
@@ -142,6 +152,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Alerting support
 - Annotations support
 
+[1.6.0]: https://github.com/gizmodata/grafana-gizmosql-datasource/releases/tag/v1.6.0
 [1.5.6]: https://github.com/gizmodata/grafana-gizmosql-datasource/releases/tag/v1.5.6
 [1.5.5]: https://github.com/gizmodata/grafana-gizmosql-datasource/releases/tag/v1.5.5
 [1.5.4]: https://github.com/gizmodata/grafana-gizmosql-datasource/releases/tag/v1.5.4
