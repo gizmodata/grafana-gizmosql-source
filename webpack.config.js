@@ -42,20 +42,9 @@ module.exports = (env, argv) => {
           test: /\.[tj]sx?$/,
           exclude: /node_modules/,
           use: {
-            loader: 'swc-loader',
+            loader: 'ts-loader',
             options: {
-              jsc: {
-                parser: {
-                  syntax: 'typescript',
-                  tsx: true,
-                },
-                transform: {
-                  react: {
-                    runtime: 'automatic',
-                  },
-                },
-                target: 'es2018',
-              },
+              transpileOnly: true,
             },
           },
         },
