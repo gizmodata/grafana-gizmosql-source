@@ -44,7 +44,9 @@ module.exports = (env, argv) => {
           use: {
             loader: 'ts-loader',
             options: {
-              transpileOnly: true,
+              compilerOptions: {
+                sourceMap: true,
+              },
             },
           },
         },
