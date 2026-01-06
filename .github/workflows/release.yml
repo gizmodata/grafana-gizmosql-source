@@ -93,6 +93,8 @@ jobs:
           # Create main multi-platform package
           mkdir -p gizmodata-gizmosql-datasource
           cp -r dist/* gizmodata-gizmosql-datasource/
+          # Remove LICENSE directory from dist if it exists, then copy LICENSE file
+          rm -rf gizmodata-gizmosql-datasource/LICENSE
           cp LICENSE gizmodata-gizmosql-datasource/
           cp CHANGELOG.md gizmodata-gizmosql-datasource/
           cp go.mod gizmodata-gizmosql-datasource/
