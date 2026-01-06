@@ -53,13 +53,6 @@ jobs:
 
           echo "Version consistency verified: $VERSION"
 
-      - name: Update release date in plugin.json
-        run: |
-          TODAY=$(date +%Y-%m-%d)
-          jq --arg d "$TODAY" '.info.updated = $d' src/plugin.json > src/plugin.json.tmp
-          mv src/plugin.json.tmp src/plugin.json
-          echo "Updated release date to $TODAY"
-
       - name: Install frontend dependencies
         run: npm ci
 
